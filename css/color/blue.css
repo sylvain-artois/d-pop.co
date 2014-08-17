@@ -1,0 +1,109 @@
+.bx-wrapper .bx-prev {
+    background-image: url(../../img/controls-blue.png);
+}
+
+.bx-wrapper .bx-next {
+    background-image: url(../../img/controls-blue.png);
+}
+
+.ui-list li {
+    background-image: url(../../img/arrow-blue.png);
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background:#336699; /* rgba fallback */
+    background:rgb(51,102,153);
+}
+
+a:hover {
+    color: #336699;
+}
+
+#navigation > nav > div a:hover {
+    background: #336699;
+}
+
+.contact-box > a:hover {
+    background: #336699;
+}
+
+.slider .captions h2{
+    color: #336699;
+}
+
+.slider .captions p{
+    border-right-color: #336699;
+}
+
+h3, .post-title {
+    border-left-color: #336699;
+}
+
+.ui-accordion-header.ui-state-active {
+    background: #336699;
+}
+
+.skill-ammount {
+    background: #336699;
+}
+
+.icon-title {
+    color: #336699;
+}
+
+.icon {
+    color: #336699;
+}
+
+.cv-slider-style-2 .bx-wrapper .bx-prev:hover,
+.cv-slider-style-2 .bx-wrapper .bx-next:hover,
+.cv-slider-style-3 .bx-wrapper .bx-prev:hover,
+.cv-slider-style-3 .bx-wrapper .bx-next:hover,
+.item-navigation a:hover,
+.blog-navigation a:hover{
+    background: #336699;
+}
+
+.portfolio-links li a:hover {
+    background: #336699;
+}
+
+.image-grid > li > a:hover > span {
+    background-color: #336699;
+    background-color: rgba(51,102,153,.75);
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-default a:hover {
+    background-color: #336699;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+    color: #336699;
+}
+
+.testimonials-slider h2.title {
+    color: #336699;
+}
+
+.more:hover {
+    background: #336699;
+}
+
+.author-name a {
+    color: #336699; 
+}
+
+.button {
+    background: #336699;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
+textarea:hover,
+textarea:focus{
+    border-color: #336699;
+}

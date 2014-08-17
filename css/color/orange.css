@@ -1,0 +1,109 @@
+.bx-wrapper .bx-prev {
+    background-image: url(../../img/controls-orange.png);
+}
+
+.bx-wrapper .bx-next {
+    background-image: url(../../img/controls-orange.png);
+}
+
+.ui-list li {
+    background-image: url(../../img/arrow-orange.png);
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background:#F94C00; /* rgba fallback */
+    background:rgb(249,76,0);
+}
+
+a:hover {
+    color: #f94c00;
+}
+
+#navigation > nav > div a:hover {
+    background: #F94C00;
+}
+
+.contact-box > a:hover {
+    background: #F94C00;
+}
+
+.slider .captions h2{
+    color: #F94C00;
+}
+
+.slider .captions p{
+    border-right-color: #F94C00;
+}
+
+h3, .post-title {
+    border-left-color: #F94C00;
+}
+
+.ui-accordion-header.ui-state-active {
+    background: #F94C00;
+}
+
+.skill-ammount {
+    background: #F94C00;
+}
+
+.icon-title {
+    color: #F94C00;
+}
+
+.icon {
+    color: #F94C00;
+}
+
+.cv-slider-style-2 .bx-wrapper .bx-prev:hover,
+.cv-slider-style-2 .bx-wrapper .bx-next:hover,
+.cv-slider-style-3 .bx-wrapper .bx-prev:hover,
+.cv-slider-style-3 .bx-wrapper .bx-next:hover,
+.item-navigation a:hover,
+.blog-navigation a:hover{
+    background: #F94C00;
+}
+
+.portfolio-links li a:hover {
+    background: #F94C00;
+}
+
+.image-grid > li > a:hover > span {
+    background-color: #f94c00;
+    background-color: rgba(249,76,0,.75);
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-default a:hover {
+    background-color: #F94C00;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+    color: #F94C00;
+}
+
+.testimonials-slider h2.title {
+    color: #f94c00;
+}
+
+.more:hover {
+    background: #f94c00;
+}
+
+.author-name a {
+    color: #f94c00; 
+}
+
+.button {
+    background: #f94c00;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
+textarea:hover,
+textarea:focus{
+    border-color: #f94c00;
+}
