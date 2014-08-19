@@ -857,7 +857,7 @@ body p {
     position: absolute;
     top: 45%;
     left: 50%;
-    margin-left: -585px;
+    margin-left: -500px;
     margin-top: -338px;
     width: 1000px;
     height: 676px;
@@ -867,7 +867,7 @@ body p {
 /* HEADER & MAIN NAVIGATION */
 #navigation {
     height: 676px;
-    width: 340px;
+    width: 170px;
     background: #202020;
     float: right;
     overflow: hidden;
