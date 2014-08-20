@@ -1,0 +1,16 @@
+Palette from Aurel
+
+gris
+#AC9B93
+
+noir
+#080501
+
+bleu pale
+#B0FAEE
+
+rouge
+#D10B26
+
+rouge sang
+#850617
