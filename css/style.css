@@ -991,10 +991,12 @@ body p {
     text-align: center;
     font-size: 50px;
 }
-.link-dribbble { background: #EA4C89; }
-.link-twitter { background: #00BAFF; }
-.link-pinterest { background: #CB2027; }
+
+.link-twitter { background: #2290BF; }
+.link-tumblr { background: #2C4762; }
 .link-facebook { background: #3B5998; }
+.link-instagram { background: #3f729b; }
+.link-sg { background: #EDEDED }
 .link-google-plus { background: #C63D2D; }
 .link-linkedin { background: #4875B4; }
 
