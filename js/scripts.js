@@ -101,7 +101,6 @@ cv.mike = (function($) {
             speed: 1000,
 			pager: false,
 			auto: true,
-            hideControlOnEnd: true,
             easing: 'ease-out',
             autoControls: true
 		});
