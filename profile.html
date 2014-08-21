@@ -36,7 +36,7 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 
-    <body data-controller="profile">
+    <body data-controller="profile" itemscope itemtype="http://schema.org/Person">
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -47,8 +47,8 @@
             <div id="main">
 
                 <header id="header">
-                    <h1><a href="index.html">D. Pop</a></h1>
-                    <h2><a href="index.html">Auteur et photographe</a></h2>
+                    <h1><a href="index.html" itemprop="name">D. Pop</a></h1>
+                    <h2><a href="index.html" itemprop="jobTitle">Auteur et photographe</a></h2>
 
                     <a href="#" id="openmenu"><i class="icon-list"></i></a>
                     <a href="#" id="closemenu"><i>X</i></a>
@@ -56,11 +56,11 @@
                     <div class="contact-box">
                         <a href="#" id="box-info">
                             <div class="icon-container"><i class="icon-info"></i></div>
-                            <div class="text-container"><p>d-pop@d-pop.co</p></div>
+                            <div class="text-container"><p itemprop="email">d-pop@d-pop.co</p></div>
                         </a>
                         <a href="#" id="box-download">
-                            <div class="icon-container"><i class="icon-download"></i></div>
-                            <div class="text-container"><p>Put something here</p></div>
+                            <div class="icon-container"><i class="icon-link"></i></div>
+                            <div class="text-container"><p itemprop="sameAs">d-pop.tumblr.com</p></div>
                         </a>
                     </div>
                 </header>  <!-- #header -->
@@ -189,10 +189,7 @@
             <footer id="navigation">
                 <nav>
                     <div><a href="profile.html"><i class="icon-vcard"></i><span>Profile</span></a></div>
-                    <div><a href="education.html"><i class="icon-book"></i><span>Education</span></a></div>
                     <div><a href="portfolio.html"><i class="icon-monitor"></i><span>Portfolio</span></a></div>
-                    <div><a href="experience.html"><i class="icon-progress-2"></i><span>Experience</span></a></div>
-                    <div><a href="blog.html"><i class="icon-pencil"></i><span>Blog</span></a></div>
                     <div><a href="contact.html"><i class="icon-paper-plane"></i><span>Contact</span></a></div>
                     <div><a href="#" id="open-social-menu"><i class="icon-plus"></i></a></div>
                     <div id="me"><img src="img/mike.jpg" alt="This is me"></div>
