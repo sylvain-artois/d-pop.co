@@ -1,96 +1,110 @@
 var cv = window.cv || {};
 
-cv.mike = (function ($) {
-	var my = {};
-	// initialization
-	pageCrawler = $('body').data('controller');
-	
-	// jQuery selectors:
-	var $openSocial, $socialMenu, $pageCrawler;
-	
-	my.init = function () {
-		initSelectors();
+cv.mike = (function($) {
 
-		initCommon();
+	var my = {
+        pageCrawler: null,
+        $openSocial: null,
+        $socialMenu: null,
+        $cvAccordion: null,
+        $openmenu: null,
+        $main: null,
+        $closemenu: null,
+        $navigation: null,
+        $scroller: null,
+        $homeSlider: null
+    };
+
+    //Callback called at Dom Ready
+	my.init = function () {
+
+        initCommon();
 
 		switch(pageCrawler) {
-			case 'home':
+
+            case 'home':
 				playHome();
 				break;
-			case 'education':
-				playEducation();
-				break;
-			case 'portfolio':
-				playPortfolio();
-				break;
-			case 'experience': 
-				playExperience();
-				break;
-			case 'single':
-				playSingle();
-				break;
-			case 'blog':
-				playBlog();
-				break;
-			case 'post':
-				playPost();
-				break;
-			case 'contact':
-				playContact();
-				break;
+
+            case 'portfolio':
+                playPortfolio();
+                break;
+
+            case 'contact':
+                playContact();
+                break;
+
+            default :
+                //what about profile page ?
 		}
 	};
-	function initSelectors(){
-		$openSocial = $('#open-social-menu');
-		$socialMenu = $('#social-menu');
-	}
 
 	function initCommon () {
-		$openSocial
-		.click(function (e) {
-				e.preventDefault();
-				$socialMenu.addClass('animated');
-			});
-		$socialMenu.mouseleave(function () {
-			$(this).removeClass('animated');
-		});
 
-		if($('.cv-accordion').length) {
-			$('.cv-accordion').accordion({ icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }, heightStyle: "content" });
+        my.pageCrawler  = $('body').data('controller');
+        my.$openSocial  = $('#open-social-menu');
+        my.$socialMenu  = $('#social-menu');
+        my.$cvAccordion = $('.cv-accordion');
+        my.$openmenu    = $('#openmenu');
+        my.$main        = $('#main');
+        my.$closemenu   = $('#closemenu');
+        my.$navigation  = $('#navigation');
+        my.$scroller    = $(".scroller");
+        my.$homeSlider  = $('#home-slider')
+
+        my.$openSocial
+		    .click(function(e) {
+				e.preventDefault();
+                my.$socialMenu.addClass('animated');
+			});
+
+        my.$socialMenu
+            .mouseleave(function() {
+			    $(this).removeClass('animated');
+		    });
+
+		if(my.$cvAccordion.length) {
+
+            my.$cvAccordion.accordion({
+                icons: {
+                    "header": "ui-icon-plus",
+                    "activeHeader": "ui-icon-minus"
+                },
+                heightStyle: "content"
+            });
 		}
 
-		$('#openmenu').click(function (e) {
-			e.preventDefault();
-			$('#main').addClass('menu-opened');
-			$('#closemenu').show();
-			$('#navigation').addClass('open');
+        my.$openmenu
+            .click(function(e) {
+			    e.preventDefault();
+                my.$main.addClass('menu-opened');
+                my.$closemenu.show();
+                my.$navigation.addClass('open');
+		    }
+        );
+
+        my.$closemenu
+            .click(function(e) {
+                my.$main.removeClass('menu-opened');
+                $(this).hide();
+                my.$navigation.removeClass('open');
+                my.$socialMenu.removeClass('animated');
 		});
 
-		$('#closemenu').click(function (e) {
-			$('#main').removeClass('menu-opened');
-			$(this).hide();
-			$('#navigation').removeClass('open');
-			$('#social-menu').removeClass('animated');
-		});
-
-		$(".scroller").mCustomScrollbar({
+        my.$scroller.mCustomScrollbar({
 		    //horizontalScroll:true
 		});
 	}
 
 	function playHome () {
-		$('#home-slider').bxSlider({
+        my.$homeSlider.bxSlider({
+            speed: 1000,
 			pager: false,
-			auto: true
+			auto: true,
+            hideControlOnEnd: true,
+            easing: 'ease-out',
+            autoControls: true
 		});
-	}
-
-	function playEducation () {
-		$('.feature-slider').bxSlider({
-			pager: false,
-			nextText: '>',
-			prevText: '<'
-		})
 	}
 
 	function playPortfolio () {
@@ -151,37 +165,7 @@ cv.mike = (function ($) {
 	    });
 	}
 
-	function playExperience() {
-
-		$('.cv-tabs').tabs();
-
-		$('.testimonials-slider').bxSlider({ 
-			adaptiveHeight: true, 
-			pager: false,
-			nextText: '>',
-			prevText: '<'
-		});
-	}
-
-	function playSingle () {
-		
-		$('.single-slider').bxSlider({
-			pager: false
-		})
-	}
-
-	function playBlog () {
-		console.log('Blog');
-	}
-
-	function playPost () {
-		
-		$('.post-slider').bxSlider({
-			pager: false
-		})
-	}
-
-	function playContact () {
+    function playContact () {
 		
 		// Quick Connect Form AJAX validation and submition
 		// Validation Plugin : http://bassistance.de/jquery-plugins/jquery-plugin-validation/
@@ -207,10 +191,13 @@ cv.mike = (function ($) {
 	}
 	
 	return  my;
+
 }(jQuery));
 
-$(document).ready(function(){
-	jQuery(cv.mike.init);
-})
+//Call cv.mike.init at dom ready
+;(function($){
+    $(cv.mike.init);
+})(jQuery);
+
 
 
