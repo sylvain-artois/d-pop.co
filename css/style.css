@@ -1072,7 +1072,7 @@ body p {
     float: left;
 }
 
-.text-container p, .text-container p a {
+.text-container p {
     margin: 18px 0 0;
     text-transform: uppercase;
     font-size: 14px;
@@ -2050,7 +2050,7 @@ input:-moz-placeholder { color:#8a8f97; font-size: .8em; }
     font-size: 20px;
     line-height: 2em;
 }
-.text-container p, .text-container p a {
+.text-container p {
     font-size: .8em;
 }
 .text-container {
@@ -2199,7 +2199,7 @@ input:-moz-placeholder { color:#8a8f97; font-size: .8em; }
 	font-size: 1em;
 	text-align: center;
 }
-.text-container p, .text-container p a {
+.text-container p {
 	font-size: .8em;
 }
 #openmenu {
@@ -2303,7 +2303,7 @@ h3 small {
 	font-size: 1em;
 	text-align: center;
 }
-.text-container p, .text-container p a {
+.text-container p {
 	font-size: .7em;
 }
 #openmenu {
@@ -2407,7 +2407,7 @@ h3 small {
 	font-size: 1em;
 	text-align: center;
 }
-.text-container p, .text-container p a {
+.text-container p {
 	font-size: .7em;
 }
 #openmenu {
@@ -2512,7 +2512,7 @@ h3 small {
 	font-size: 1em;
 	text-align: center;
 }
-.text-container p, .text-container p a {
+.text-container p {
 	font-size: 0.5em;
 }
 #openmenu {
