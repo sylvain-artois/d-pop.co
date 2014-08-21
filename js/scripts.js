@@ -20,7 +20,7 @@ cv.mike = (function($) {
 
         initCommon();
 
-		switch(pageCrawler) {
+		switch(my.pageCrawler) {
 
             case 'home':
 				playHome();
