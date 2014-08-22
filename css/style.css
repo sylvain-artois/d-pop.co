@@ -955,7 +955,7 @@ body p {
     position: absolute;
     bottom: 0;
     background: white;
-    right: 340px;
+    right: 170px;
     width: 0;
     overflow: hidden;
     -webkit-transition: all 300ms ease;
@@ -965,7 +965,7 @@ body p {
     transition: all 300ms ease;
 }
 #social-menu.animated {
-    width: 664px;
+    width: 830px;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -976,7 +976,6 @@ body p {
     padding: 0;
     margin: 0;
     list-style: none;
-    width: 664px;
 }
 #social-menu ul li {
     display: inline-block;
